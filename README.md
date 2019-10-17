@@ -5,3 +5,6 @@ The other project I have joined always a private project. I have a contract to p
 You can log in it with account:
 Email: hatk1@gmail.com
 Password: 123456789
+
+Please run this command line befoe build this project:
+pod install
