@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListStoryTableViewCell" rowHeight="125" id="KGk-i7-Jjw" customClass="ListStoryTableViewCell" customModule="iTruyen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="124.66666666666667"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjR-s7-Ttd">
+                        <rect key="frame" x="24" y="8" width="312" height="108.66666666666667"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vM4-BI-Wly">
+                                <rect key="frame" x="231.66666666666666" y="8" width="72.333333333333343" height="92.666666666666671"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABC" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="say-Vd-oJU">
+                                <rect key="frame" x="16" y="7.9999999999999982" width="199.66666666666666" height="25.333333333333329"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="YqF-uk-r0V">
+                                <rect key="frame" x="16" y="33.333333333333336" width="199.66666666666666" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="jRR-4c-jVv">
+                                <rect key="frame" x="16" y="100.66666666666667" width="199.66666666666666" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jRR-4c-jVv" firstAttribute="leading" secondItem="gjR-s7-Ttd" secondAttribute="leading" constant="16" id="7xo-Jc-yzM"/>
+                            <constraint firstItem="vM4-BI-Wly" firstAttribute="leading" secondItem="say-Vd-oJU" secondAttribute="trailing" constant="16" id="FNI-4D-oM5"/>
+                            <constraint firstItem="vM4-BI-Wly" firstAttribute="leading" secondItem="YqF-uk-r0V" secondAttribute="trailing" constant="16" id="L6k-xs-ZZd"/>
+                            <constraint firstAttribute="bottom" secondItem="jRR-4c-jVv" secondAttribute="bottom" constant="8" id="OLX-yK-pWX"/>
+                            <constraint firstAttribute="bottom" secondItem="vM4-BI-Wly" secondAttribute="bottom" constant="8" id="RNQ-Jm-Qrg"/>
+                            <constraint firstItem="vM4-BI-Wly" firstAttribute="width" relation="lessThanOrEqual" secondItem="gjR-s7-Ttd" secondAttribute="height" multiplier="1:1.5" id="RRn-io-6v4"/>
+                            <constraint firstItem="say-Vd-oJU" firstAttribute="top" secondItem="gjR-s7-Ttd" secondAttribute="top" constant="8" id="d0Q-bm-Or1"/>
+                            <constraint firstAttribute="trailing" secondItem="vM4-BI-Wly" secondAttribute="trailing" constant="8" id="dvI-eG-cvu"/>
+                            <constraint firstItem="YqF-uk-r0V" firstAttribute="leading" secondItem="gjR-s7-Ttd" secondAttribute="leading" constant="16" id="jvl-av-EJm"/>
+                            <constraint firstItem="vM4-BI-Wly" firstAttribute="top" secondItem="gjR-s7-Ttd" secondAttribute="top" constant="8" id="k1q-gA-Wxh"/>
+                            <constraint firstItem="say-Vd-oJU" firstAttribute="leading" secondItem="gjR-s7-Ttd" secondAttribute="leading" constant="16" id="kUo-se-rxm"/>
+                            <constraint firstItem="YqF-uk-r0V" firstAttribute="top" secondItem="say-Vd-oJU" secondAttribute="bottom" id="lQ5-OR-Dch"/>
+                            <constraint firstItem="vM4-BI-Wly" firstAttribute="leading" secondItem="jRR-4c-jVv" secondAttribute="trailing" constant="16" id="xXO-at-yVx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gjR-s7-Ttd" secondAttribute="trailing" constant="24" id="AeQ-Q3-2hC"/>
+                    <constraint firstAttribute="bottom" secondItem="gjR-s7-Ttd" secondAttribute="bottom" constant="8" id="WGr-PJ-cO5"/>
+                    <constraint firstItem="gjR-s7-Ttd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="XAj-ra-FYM"/>
+                    <constraint firstItem="gjR-s7-Ttd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="x6y-Kz-Byh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorBook" destination="YqF-uk-r0V" id="xdE-7U-vYK"/>
+                <outlet property="backgroundCell" destination="gjR-s7-Ttd" id="fx6-aK-MEC"/>
+                <outlet property="imageBook" destination="vM4-BI-Wly" id="Uid-m0-1q8"/>
+                <outlet property="titleBook" destination="say-Vd-oJU" id="JUP-SD-mUf"/>
+                <outlet property="viewAndUpdate" destination="jRR-4c-jVv" id="6LT-3G-2ee"/>
+            </connections>
+            <point key="canvasLocation" x="164.80000000000001" y="114.16256157635469"/>
+        </tableViewCell>
+    </objects>
+</document>
